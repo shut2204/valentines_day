@@ -27,11 +27,11 @@ errorButton.addEventListener('click', ()=>{
 
 buttons.forEach(button => {
   button.addEventListener('click', ()=>{
-      if(button.textContent == "Si"){
+      if(button.textContent == "Да"){
           updateDisplay(ohyes)
           buttons.forEach(btn => btn.style.display = 'none')
       }
-      if(button.textContent == 'No'){
+      if(button.textContent == 'Нет'){
           count++
           if(count < alternatives.length){
               updateDisplay(alternatives[count])
